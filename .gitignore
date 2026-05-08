@@ -1,33 +1,54 @@
-HELP.md
+### Build Tools ###
+# Maven
 target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+!/.mvn/wrapper/maven-wrapper.jar
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
 
-### IntelliJ IDEA ###
-.idea
+### IDE Specific ###
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Eclipse
+.metadata/
+bin/
+tmp/
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+### Logs & Temp ###
+*.log
+logs/
+temp/
+*.tmp
+
+### OS Specific ###
+.DS_Store
+Thumbs.db
+
+### Sensitive Configs ###
+.env
+*.properties.local
+*.yml.local
